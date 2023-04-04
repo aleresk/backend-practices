@@ -4,6 +4,7 @@ class Persona {
     }
 
     static especie = 'Humano';
+    let variable = "texto";
 
 
 }
