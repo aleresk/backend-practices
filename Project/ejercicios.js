@@ -15,13 +15,17 @@ class ProductManager{
             product.id = this.products[this.products.length - 1].id + 1;
         };
 
-        if(this.products.includes(product.code)){
-            console.log("El codigo ya existe");
-                     
-        }else{
-            this.products.push(product);
-            console.log(this.products.includes(product.code));  
-        }
+        this.products.forEach((element) =>{
+            if(element.code != product.code){
+                this.products.push(product);
+            }else{
+                return console.log("El código ya existe)");
+            }
+
+        })
+        
+        
+
 
     }
 
@@ -40,3 +44,5 @@ gestionProductos.addProduct("Laptop", "Portatil marca Lenovo", 2900, "//ruta/fot
 gestionProductos.addProduct("Tablet", "Tableta marca Apple", 1800, "//ruta/foto", 234, 25);
 gestionProductos.addProduct("Desktop", "PC de escritorio marca DELL", 2700, "//ruta/foto", 213, 32);
 console.log(gestionProductos.getProduct());
+
+
