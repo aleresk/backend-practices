@@ -4,12 +4,13 @@ class ProductManager{
         this.products = [];
     }
 
-    addProduct(){
-
+    addProduct = (title, description, price, thumbnail, code, stock) => {
+        const product = {title, description, price, thumbnail, code, stock};
+        }
     }
 
     getProduct = () => {
-        return this.products
+        return this.products;
     }
 
     getProductById(){
