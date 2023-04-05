@@ -15,7 +15,7 @@ class ProductManager{
             product.id = this.products[this.products.length - 1];
         };
 
-        //this.product.push(products);        
+        this.product.push(products);        
         
 
     }
