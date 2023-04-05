@@ -28,4 +28,8 @@ class ProductManager{
     getProductById(){
 
     }
-}
+};
+
+const gestionProductos = new ProductManager();
+gestionProductos.addProduct("Celular", "SmartPhone marca Samsung", 900, "//ruta/foto", 543, 43);
+console.log(gestionProductos.getProduct());
