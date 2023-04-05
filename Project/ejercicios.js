@@ -1,7 +1,7 @@
 class ProductManager{
 
     constructor(){
-        this.product = [];
+        this.products = [];
     }
 
     addProduct(){
@@ -9,7 +9,7 @@ class ProductManager{
     }
 
     getProduct = () => {
-        return this.product
+        return this.products
     }
 
     getProductById(){
