@@ -16,10 +16,10 @@ class ProductManager{
         };
 
         this.products.forEach((element) =>{
-            if(element.code != product.code){
-                this.products.push(product);
+            if(element.code === product.code){
+                return console.log("El code ya existe");
             }else{
-                return console.log("El código ya existe)");
+                this.products.push(product);
             }
 
         })
