@@ -19,12 +19,9 @@ class ProductManager{
             if(elements.code === product.code){
                 return console.log("El código ya existe");
             }
-            this.products.push(product);          
+                     
         })
-        
-        
-
-
+        this.products.push(product); 
     }
 
     getProduct = () => {
