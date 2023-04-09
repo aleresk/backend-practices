@@ -17,7 +17,7 @@ class ProductManager{
 
         this.products.forEach((elements) =>{
             if(elements.code === product.code){
-                return console.log("El código ya existe");
+                return console.log("El código ya existe: " + product.code);
             }
                      
         })
@@ -39,5 +39,3 @@ gestionProductos.addProduct("Laptop", "Portatil marca Lenovo", 2900, "//ruta/fot
 gestionProductos.addProduct("Tablet", "Tableta marca Apple", 1800, "//ruta/foto", 234, 25);
 gestionProductos.addProduct("Desktop", "PC de escritorio marca DELL", 2700, "//ruta/foto", 213, 32);
 console.log(gestionProductos.getProduct());
-
-
