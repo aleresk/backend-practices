@@ -17,7 +17,7 @@ class ProductManager{
 
         let codeIqual = this.products.find(e=>e.code == product.code)
         if(codeIqual){
-            return console.log("El Código ya Existe");
+            return console.log("El Código " + product.code + " ya Existe");
         }
         this.products.push(product); 
     }
