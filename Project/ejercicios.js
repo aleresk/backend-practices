@@ -15,12 +15,10 @@ class ProductManager{
             product.id = this.products[this.products.length - 1].id + 1;
         };
 
-        this.products.forEach((elements) =>{
-            if(elements.code === product.code){
-                return console.log("El código ya existe: " + product.code);
-            }
-                     
-        })
+        let codeIqual = this.products.find(e=>e.code == product.code)
+        if(codeIgual){
+            return console.log("El Código ya Existe");
+        }
         this.products.push(product); 
     }
 
